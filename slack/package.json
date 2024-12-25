@@ -1,0 +1,20 @@
+{
+  "name": "slack",
+  "version": "1.0.0",
+  "main": "slack.js",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "start": "node src/slack.js"
+  },
+  "author": "Yehudit",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@slack/web-api": "^7.8.0",
+    "dotenv": "^16.4.7"
+  }
+}
