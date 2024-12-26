@@ -9,7 +9,7 @@ async function createNewChannel(cl = client, name) {
         });
         return 'succeeded!'
     }
-    catch (error) {
+    catch {
         throw new Error('failed to create');
     }
 }
@@ -23,8 +23,5 @@ async function getListOfChannels(cl = client) {
         throw new Error('failed');
     }
 };
-
-createNewChannel()
-getListOfChannels()
 
 module.exports = { createNewChannel, getListOfChannels }
