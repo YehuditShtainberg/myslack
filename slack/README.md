@@ -3,6 +3,7 @@
 
 in this task has two function:
 
-* createNewChannel() - create new conversation in slack.
+* createNewChannel() - create new conversation in Slack.
+this method need get a name of the channel.
 
-* getListOfChannels() - get list of conversation that in slack.
+* getListOfChannels() - get list of conversation that in Slack.

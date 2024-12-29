@@ -8,8 +8,8 @@ describe('CHECK CREATENEWCHANNEL FUNCTION', () => {
 
 describe('CHECK GETLISTOFCHANNELS FUNCTION', () => {
     it('throw error if the connection failed', () => {
-        expect(async () => { await getListOfChannels("stamClient") }).rejects.toThrow('failed')
-        expect(async () => { await getListOfChannels("") }).rejects.toThrow('failed')
+        expect(async () => { await getListOfChannels("stamClient") }).rejects.toThrow('failed to connection')
+        expect(async () => { await getListOfChannels("") }).rejects.toThrow('failed to connection')
     })
 })
 
