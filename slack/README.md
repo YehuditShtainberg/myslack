@@ -1,6 +1,8 @@
 
 # Connection list to Slack via the WEB API
 
+In this task, we connect to Slack via the web api.
+
 To access Slack via code, a `Token` is required.
 
 The `Token` is taken from the App that we created in Slack.
