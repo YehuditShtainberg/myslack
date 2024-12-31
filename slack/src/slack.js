@@ -2,14 +2,15 @@ const { WebClient } = require('@slack/web-api');
 require('dotenv').config()
 
 const client = new WebClient(process.env.TOKEN, {});
-async function createNewChannel(cl=client,name) {
+
+async function createNewChannel(cl = client, name) {
     try {
         const result = await cl.conversations.create({
             name: name
         });
         return 'succeeded!'
     }
-    catch (error) {
+    catch {
         throw new Error('failed to create');
     }
 }
@@ -20,10 +21,8 @@ async function getListOfChannels(cl = client) {
         return result
     }
     catch (error) {
-        throw new Error('failed');
+        throw new Error('failed to connection');
     }
 };
 
-createNewChannel()
-getListOfChannels()
-module.exports = { createNewChannel,getListOfChannels }
+module.exports = { createNewChannel, getListOfChannels }
